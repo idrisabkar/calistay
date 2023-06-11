@@ -85,6 +85,19 @@ a:hover,
 a:active {
   outline: 0;
 }
+.logos {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+#logos {
+  width: 9rem;
+  height: 9rem;
+  margin: 2rem;
+}
 
 /* ===================================================================
  * # typography & general theme styles - (_document-setup.scss)
@@ -1258,7 +1271,7 @@ input::-moz-focus-inner {
 
 .home-logo img {
   width: 120px;
-  height: 50px;
+  height: 100px;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1970,13 +1983,24 @@ html.no-csstransitions .home-content__main {
     min-height: 630px;
   }
 
+  .logos {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #logos {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem;
+  }
+
   .home-logo {
     right: 30px;
   }
 
   .home-logo img {
     width: 95px;
-    height: 24px;
+    height: 65px;
   }
 
   .home-content h1 {
@@ -2174,8 +2198,8 @@ html.no-csstransitions .home-content__main {
 }
 
 .info-toggle::after {
-  content: 'More Info';
-  display: block;
+  content: 'Fazla Bilgi';
+  display: inline;
   position: absolute;
   top: 0;
   right: -120px;
@@ -2254,7 +2278,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .info-is-visible .info-toggle::after {
-  content: 'close';
+  content: 'Kapat';
 }
 
 /* ------------------------------------------------------------------- 
